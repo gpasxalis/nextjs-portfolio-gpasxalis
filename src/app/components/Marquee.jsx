@@ -10,9 +10,9 @@ export default function Marquee(props) {
         '/assets/python.svg',
         '/assets/wordpress.svg',
         '/assets/nextjs.svg',
+        '/assets/tailwindcss.svg',
         '/assets/html5.svg',
         '/assets/photoshop.svg',
-        '/assets/illustrator.svg',
         '/assets/notion.svg',
     ]
 

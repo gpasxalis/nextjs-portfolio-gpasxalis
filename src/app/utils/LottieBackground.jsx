@@ -1,11 +1,10 @@
 'use client'
 import Lottie from 'lottie-react'
-import AstroGuy from '../utils/lotties/dalutionastro.json'
 
-export default function LottieBackground() {
+export default function LottieBackground({ animationData, classes }) {
     return (
         <>
-            <Lottie animationData={AstroGuy} className="flex items-start" />
+            <Lottie animationData={animationData} className={classes} />
         </>
     )
 }

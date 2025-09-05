@@ -2,14 +2,15 @@ import LottieBackground from '../utils/LottieBackground'
 import Button from '../utils/Button'
 import Marquee from './Marquee'
 import G_LOGO from '../../../public/assets/g_logo.png'
+import Tag from '../utils/Tag'
+
+import AstroGuy from '../utils/lotties/dalutionastro.json'
 
 export default function Hero() {
     return (
         <section className="py-20 px-6 flex justify-around items-center flex-col md:flex-row">
             <div className="max-w-full md:w-1/2 lg:pl-5">
-                <h3 className="text-sm text-gp-accent font-headingFont uppercase font-semibold">
-                    Crafting Digital Dreams
-                </h3>
+                <Tag>Crafting Digital Dreams</Tag>
                 <h1 className="text-5xl md:text-5xl lg:text-8xl font-black uppercase text-gp-accent font-headingFont pt-2 md:pt-3">
                     I am{' '}
                     <span className="text-gp-primary">Paschalis Grammenos</span>
@@ -38,7 +39,10 @@ export default function Hero() {
                 <Marquee />
             </div>
             <div className="flex justify-center self-start -m-8 max-w-full md:w-1/3 lg:px-5">
-                <LottieBackground />
+                <LottieBackground
+                    animationData={AstroGuy}
+                    classes="flex items-start"
+                />
             </div>
         </section>
     )

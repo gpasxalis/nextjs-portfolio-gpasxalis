@@ -1,26 +1,85 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+    --font-headingFont: var(--font-heading-font);
+    --font-bodyFont: var(--font-body-font);
+    --color-gp-background: #1b1b1b;
+    --color-gp-blue-bg: #030f18;
+    --color-gp-primary: #f8b400;
+    --color-gp-secondary: #e63946;
+    --color-gp-accent: #ffffff;
+    --color-dark-blue: #222831;
+    --color-dark-gray: #393e46;
+    --color-yellow: #ffd369;
+    --color-off-white: #e9ecef;
+    --color-off-whitey: #f8f9fa;
+    --color-soft-black: #333333;
+    --color-web-black: #101010;
+    --color-oxford-blue: #11112d;
+    --color-honolulu-blue: #2379ad;
+    --color-pacific-cya: #13a2bf;
+    --color-neon-petrol: #19ddbf;
+    --animate-marquee: marquee 15s linear infinite;
+    --animate-marquee2: marquee2 15s linear infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @keyframes marquee2 {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0%);
+        }
+    }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.filled_button {
+    background: linear-gradient(45deg, #cecece 0%, #ffffff 100%);
+    color: var(--color-gp-blue-bg);
+    transition: box-shadow 0.3s;
+    box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+        rgba(67, 183, 255, 0.2) 0px 0px 39px,
+        rgba(67, 183, 255, 0.2) 0px 0px 60px;
+}
+
+.filled_button:hover {
+    animation: none;
+    box-shadow: rgba(67, 183, 255, 0.2) 0px 0px 24px,
+        rgba(67, 183, 255, 0.2) 0px 0px 39px,
+        rgba(67, 183, 255, 0.2) 0px 0px 54px,
+        rgba(67, 183, 255, 0.2) 0px 0px 74px;
+}
+
+.transparent_button {
+    color: var(--color-gp-accent);
+    background: linear-gradient(
+        to right,
+        var(--color-gp-primary) 50%,
+        transparent 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.2s ease-in;
+}
+
+.transparent_button:hover {
+    background-position: left bottom;
+    color: var(--color-gp-blue-bg);
 }

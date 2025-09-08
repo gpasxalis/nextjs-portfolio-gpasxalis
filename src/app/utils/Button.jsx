@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-export default function Button(props) {
+export default function Button({ children, classes, href_to }) {
     return (
         <Link
-            href="#services"
-            className={`${props.classes} py-4 rounded-4xl min-w-48 uppercase text-center font-bold font-headingFont`}
+            href={href_to}
+            className={`${classes} py-4 rounded-4xl min-w-48 uppercase text-center font-bold font-headingFont`}
         >
-            {props.text}
+            {children}
         </Link>
     )
 }

@@ -8,7 +8,7 @@ import AstroGuy from '../utils/lotties/dalutionastro.json'
 
 export default function Hero() {
     return (
-        <section className="py-20 px-6 flex justify-around items-center flex-col md:flex-row">
+        <section className="pt-20 pb-10 md:pb-20 px-6 flex justify-around items-center flex-col md:flex-row">
             <div className="max-w-full md:w-1/2 lg:pl-5">
                 <Tag>Crafting Digital Dreams</Tag>
                 <h1 className="text-5xl md:text-5xl lg:text-8xl font-black uppercase text-gp-accent font-headingFont pt-2 md:pt-3">
@@ -28,21 +28,17 @@ export default function Hero() {
                     <Button
                         classes="filled_button text-gp-blue-bg"
                         href_to="#services"
-                        text="Get Started"
-                    />
-                    <Button
-                        classes="transparent_button"
-                        href_to="#services"
-                        text="About Me"
-                    />
+                    >
+                        Get Started
+                    </Button>
+                    <Button classes="transparent_button" href_to="#services">
+                        About Me
+                    </Button>
                 </div>
                 <Marquee />
             </div>
-            <div className="flex justify-center self-start -m-8 max-w-full md:w-1/3 lg:px-5">
-                <LottieBackground
-                    animationData={AstroGuy}
-                    classes="flex items-start"
-                />
+            <div className="flex justify-center md:self-start -m-8 max-w-full md:w-1/3 lg:px-5">
+                <LottieBackground animationData={AstroGuy} />
             </div>
         </section>
     )

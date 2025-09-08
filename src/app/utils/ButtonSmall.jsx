@@ -1,13 +1,12 @@
 import Link from 'next/link'
 
-export default function ButtonSmall(props) {
+export default function ButtonSmall({ children, href_to, classes }) {
     return (
         <Link
-            href={props.href_to}
-            className={`${props.classes} px-8 py-2 rounded-4xl uppercase text-center font-bold font-headingFont`}
-            target="_blank"
+            href={href_to}
+            className={`${classes} px-8 py-2 rounded-4xl uppercase text-center font-bold font-headingFont`}
         >
-            {props.text}
+            {children}
         </Link>
     )
 }

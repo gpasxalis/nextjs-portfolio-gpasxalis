@@ -1,75 +1,75 @@
-import LottieBackground from '../utils/LottieBackground'
 import SectionTitles from '../utils/SectionTitles'
 import Button from '../utils/Button'
 import Tag from '../utils/Tag'
-import { motion, scale } from 'framer-motion'
-import IconCard from '../utils/IconCard'
+import InfoBoxes from '../utils/InfoBoxes'
 import InfoCard from '../utils/InfoCard'
-
-import {
-    MdOutlineComputer,
-    MdDesignServices,
-    MdPhoneIphone,
-    MdDevices,
-    MdTrendingUp,
-    MdSpeed,
-} from 'react-icons/md'
-
-import LaptopCoffee from '../utils/lotties/LaptopCoffee.json'
+import TechStack from '../utils/TechStack'
 
 export default function About() {
-    const item = {
-        hidden: { opacity: 0, y: 30 },
-        show: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-    }
-
     return (
         <section className="pb-20 px-6 flex justify-around items-center flex-col gap-12">
             <div className="w-full pt-20 flex justify-around items-start md:items-center flex-col md:flex-row gap-10">
-                <div className="max-w-full w-full lg:pl-5">
+                <div className="max-w-full w-full">
                     <Tag>about me</Tag>
                     <SectionTitles>Behind the Code</SectionTitles>
                 </div>
             </div>
 
-            <div className="w-full flex justify-around items-center flex-col md:flex-row flex-wrap">
-                <InfoCard
-                    title={'40+'}
+            <div className="w-full flex justify-around items-center flex-col md:flex-row flex-wrap gap-10 pb-5">
+                <InfoBoxes
+                    title={'7+'}
                     item_text={'Happy clients'}
                     classes="w-full md:w-[30%]"
                 />
-                <InfoCard
+                <InfoBoxes
                     title={'3+'}
                     item_text={'Years of experience'}
                     classes="w-full md:w-[30%]"
                 />
-                <InfoCard
+                <InfoBoxes
                     title={'10+'}
                     item_text={'Projects done'}
                     classes="w-full md:w-[30%]"
                 />
             </div>
 
-            <div className="w-full flex justify-around items-center flex-col md:flex-row flex-wrap gap-15">
-                <div className="w-full md:w-[30%]">
-                    <IconCard
-                        title="Web Development"
-                        item_text="I design and build modern websites tailored to your needs, focusing on clean code, great user experience, and long-lasting performance"
+            <div className="w-full flex justify-around items-start flex-col md:flex-row gap-10">
+                <div className="w-full md:w-2/3 flex justify-around items-start flex-col gap-10">
+                    <p className="font-bodyFont text-gp-accent/80 text-sm md:text-lg">
+                        Curious and persistent by nature, I have been passionate
+                        about programming and creating digital experiences
+                        throughout my life. I enjoy solving problems step by
+                        step, exploring new technologies, and constantly
+                        learning to expand my skills. My methodical mindset and
+                        attention to detail help me build solutions that are
+                        both functional and thoughtfully designed. <br />
+                        <br />I thrive when working independently, but I also
+                        value collaboration and the exchange of ideas within a
+                        team. I believe that staying true to oneself is
+                        essential, and I strive to let my work reflect my
+                        creativity, dedication, and curiosity. Every project is
+                        an opportunity to grow, experiment, and push the
+                        boundaries of what I can achieve
+                    </p>
+
+                    <Button
+                        classes="filled_button text-gp-blue-bg"
+                        href_to="#services"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
-                            <MdOutlineComputer />
-                        </div>
-                    </IconCard>
+                        Contact Me
+                    </Button>
+                </div>
+
+                <div className="w-full md:w-1/3 flex justify-around items-center flex-col">
+                    <InfoCard />
                 </div>
             </div>
 
-            <div className="w-full flex justify-center items-center">
-                <Button
-                    classes="filled_button text-gp-blue-bg"
-                    href_to="#services"
-                >
-                    Contact Me
-                </Button>
+            <div className="w-full flex flex-col">
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-headingFont font-bold text-gp-accent py-5 md:py-10">
+                    My Tech Stack<span className="text-gp-primary">.</span>
+                </h3>
+                <TechStack />
             </div>
         </section>
     )

@@ -18,7 +18,7 @@ export default function Hero() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-headingFont font-bold text-gp-accent py-5 md:py-10">
                     Web Developer<span className="text-gp-primary">.</span>
                 </h2>
-                <p className="font-bodyFont text-sm md:text-lg inline-block text-gp-accent text-wrap">
+                <p className="font-bodyFont text-sm md:text-lg inline-block text-gp-accent/80 text-wrap">
                     I create fast, responsive, and user-friendly websites. My
                     mission is to turn ideas into digital solutions that look
                     great and perform even better

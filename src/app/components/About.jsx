@@ -3,7 +3,7 @@ import Button from '../utils/Button'
 import Tag from '../utils/Tag'
 import InfoBoxes from '../utils/InfoBoxes'
 import InfoCard from '../utils/InfoCard'
-import TechStack from '../utils/TechStack'
+import TechStack from './TechStack'
 
 export default function About() {
     return (
@@ -60,7 +60,7 @@ export default function About() {
                     </Button>
                 </div>
 
-                <div className="w-full md:w-1/3 flex justify-around items-center flex-col">
+                <div className="w-full md:w-1/3 flex justify-around items-start md:items-center flex-col">
                     <InfoCard />
                 </div>
             </div>

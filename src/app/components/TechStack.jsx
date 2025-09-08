@@ -1,7 +1,6 @@
 'use client'
 import { motion, scale } from 'framer-motion'
-import Link from 'next/link'
-import Tag from './Tag'
+import Tag from '../utils/Tag'
 
 import {
     IoLogoPython,
@@ -12,8 +11,11 @@ import {
     IoLogoWordpress,
     IoLogoWindows,
 } from 'react-icons/io5'
+
 import { BiLogoFlask, BiLogoJquery, BiLogoMongodb } from 'react-icons/bi'
+
 import { RiNextjsFill } from 'react-icons/ri'
+
 import {
     SiJson,
     SiElasticsearch,

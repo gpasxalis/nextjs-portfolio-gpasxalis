@@ -11,10 +11,10 @@ export const Navbar = () => {
 
     // Nav Links Array
     const navLinks = [
-        { name: 'Home', href: '#' },
-        { name: 'Portfolio', href: '#portfolio' },
+        { name: 'Home', href: '/' },
         { name: 'About', href: '#about' },
-        { name: 'Resume', href: '#resume' },
+        { name: 'Services', href: '#services' },
+        { name: 'Portfolio', href: '#portfolio' },
         { name: 'Contact', href: '#contact' },
     ]
 

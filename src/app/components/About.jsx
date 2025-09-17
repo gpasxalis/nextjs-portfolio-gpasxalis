@@ -7,7 +7,10 @@ import TechStack from './TechStack'
 
 export default function About() {
     return (
-        <section className="pb-20 px-6 flex justify-around items-center flex-col gap-12">
+        <section
+            id="about"
+            className="pb-20 px-6 flex justify-around items-center flex-col gap-12"
+        >
             <div className="w-full pt-20 flex justify-around items-start md:items-center flex-col md:flex-row gap-10">
                 <div className="max-w-full w-full">
                     <Tag>about me</Tag>

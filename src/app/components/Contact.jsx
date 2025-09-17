@@ -5,7 +5,10 @@ import ContactCard from '../utils/ContactCard'
 
 export default function Services() {
     return (
-        <section className="pb-20 px-6 flex justify-around items-center flex-col gap-2">
+        <section
+            id="contact"
+            className="pb-20 px-6 flex justify-around items-center flex-col gap-2"
+        >
             <div className="w-full flex justify-around flex-col pt-20">
                 <Tag>contact now</Tag>
                 <SectionTitles>Get in touch</SectionTitles>

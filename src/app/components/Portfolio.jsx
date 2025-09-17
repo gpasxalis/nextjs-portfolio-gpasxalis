@@ -7,7 +7,10 @@ import { ProjectData } from '../utils/projects-data'
 
 export default function Portfolio() {
     return (
-        <section className="pb-20 px-6 flex justify-around items-center flex-col gap-12">
+        <section
+            id="portfolio"
+            className="pb-20 px-6 flex justify-around items-center flex-col gap-12"
+        >
             <div className="w-full pt-20 flex justify-around items-start md:items-center flex-col md:flex-row gap-10">
                 <div className="max-w-full w-full">
                     <Tag>projects</Tag>

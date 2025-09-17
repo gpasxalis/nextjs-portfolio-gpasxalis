@@ -63,14 +63,14 @@ function ContactForm() {
                                 className="pb-1 text-xs uppercase tracking-wider"
                             ></label>
                             <input
+                                type="text"
+                                name="name"
                                 value={userInput.name}
                                 onChange={handleChange}
                                 required
-                                type="text"
                                 id="name"
                                 placeholder="Your name"
                                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                name="name"
                             />
                         </div>
                         <div className="mx-0 mb-1 sm:mb-4">
@@ -79,14 +79,14 @@ function ContactForm() {
                                 className="pb-1 text-xs uppercase tracking-wider"
                             ></label>
                             <input
+                                type="email"
+                                name="email"
                                 value={userInput.email}
                                 onChange={handleChange}
                                 required
-                                type="email"
                                 id="email"
                                 placeholder="Your email address"
                                 className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
-                                name="email"
                             />
                         </div>
                     </div>
@@ -96,11 +96,11 @@ function ContactForm() {
                             className="pb-1 text-xs uppercase tracking-wider"
                         ></label>
                         <textarea
-                            onChange={handleChange}
+                            name="message"
                             value={userInput.message}
+                            onChange={handleChange}
                             required
                             id="textarea"
-                            name="textarea"
                             cols="30"
                             rows="5"
                             placeholder="Write your message..."

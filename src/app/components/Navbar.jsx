@@ -44,7 +44,7 @@ export const Navbar = () => {
             className={`sticky top-0 w-full z-50 transition-all duration-500 ease-out ${
                 isScrolled
                     ? 'bg-black/30 backdrop-blur-lg shadow-sm shadow-gp-accent/10'
-                    : ''
+                    : 'bg-gp-blue-bg/30 backdrop-blur-lg shadow-sm shadow-gp-accent/10'
             }`}
         >
             <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-4">

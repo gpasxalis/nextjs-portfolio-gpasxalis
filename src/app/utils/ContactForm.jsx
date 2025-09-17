@@ -97,6 +97,7 @@ function ContactForm() {
                         ></label>
                         <textarea
                             onChange={handleChange}
+                            value={userInput.message}
                             required
                             id="textarea"
                             name="textarea"

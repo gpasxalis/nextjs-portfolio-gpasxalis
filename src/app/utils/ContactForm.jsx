@@ -102,6 +102,7 @@ function ContactForm() {
                                     message: e.target.value,
                                 })
                             }
+                            value={userInput.message}
                             required
                             id="textarea"
                             name="textarea"

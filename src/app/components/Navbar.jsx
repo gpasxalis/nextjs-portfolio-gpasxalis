@@ -81,7 +81,7 @@ export const Navbar = () => {
                                 delay: 0.1 + index * 0.1,
                             }}
                             href={link.href}
-                            key={link.hraf || index}
+                            key={link.href || index}
                             className="font-headingFont uppercase text-gp-accent text-center text-[15px] font-bold hover:text-gp-primary transition-all duration-300 ease-in-out"
                         >
                             {link.name}
@@ -121,7 +121,7 @@ export const Navbar = () => {
                                 exit={{ rotate: 90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <RiCloseLine className="text-2xl" />
+                                <RiCloseLine className="text-2xl text-gp-accent hover:text-gp-primary" />
                             </motion.div>
                         ) : (
                             <motion.div
@@ -131,7 +131,7 @@ export const Navbar = () => {
                                 exit={{ rotate: -90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <RiMenu4Line className="text-2xl" />
+                                <RiMenu4Line className="text-2xl text-gp-accent hover:text-gp-primary" />
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -147,7 +147,7 @@ export const Navbar = () => {
                         transition={{ duration: 0.3 }}
                         className="min-[825px]:hidden fixed w-full top-[80px] z-40"
                     >
-                        <div className="bg-black/50 backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
+                        <div className="bg-black backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
                             <div className="flex flex-col gap-4">
                                 {navLinks.map((link, index) => (
                                     <motion.a
@@ -158,7 +158,7 @@ export const Navbar = () => {
                                             delay: index * 0.1,
                                         }}
                                         onClick={closeMenu}
-                                        key={link.hraf || index}
+                                        key={link.href || index}
                                         href={link.href}
                                         className="font-headingFont uppercase text-gp-accent text-[18px] font-bold hover:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
                                     >

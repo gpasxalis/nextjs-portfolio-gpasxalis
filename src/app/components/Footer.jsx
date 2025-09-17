@@ -1,12 +1,25 @@
 'use client'
 import React from 'react'
 import { FaLinkedin } from 'react-icons/fa'
+import { CiMobile3 } from 'react-icons/ci'
+import { FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+
 import Link from 'next/link'
 
 export default function Footer() {
     // Social Media Links Array
-    const socialIcons = [{ icon: FaLinkedin, href: 'https://linkedin.com/' }]
+    const socialIcons = [
+        { icon: FaLinkedin, href: 'https://linkedin.com/' },
+        {
+            icon: CiMobile3,
+            href: 'https://card.dalution.gr/pgrammenos',
+        },
+        {
+            icon: FaGithub,
+            href: 'https://github.com/gpasxalis',
+        },
+    ]
 
     const container = {
         hidden: {},

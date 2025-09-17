@@ -23,7 +23,7 @@ export default function ContactCard() {
             >
                 <div>
                     <div className="p-4 rounded-xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all">
-                        <BsFillPersonFill />
+                        <BsFillPersonFill className="text-lg" />
                     </div>
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export default function ContactCard() {
             >
                 <div>
                     <div className="p-4 rounded-xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all">
-                        <HiPhone />
+                        <HiPhone className="text-lg" />
                     </div>
                 </div>
                 <div>
@@ -67,7 +67,7 @@ export default function ContactCard() {
             >
                 <div>
                     <div className="p-4 rounded-xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all">
-                        <HiMiniEnvelope />
+                        <HiMiniEnvelope className="text-lg" />
                     </div>
                 </div>
                 <div>
@@ -91,7 +91,7 @@ export default function ContactCard() {
             >
                 <div>
                     <div className="p-4 rounded-2xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all">
-                        <HiMapPin />
+                        <HiMapPin className="text-lg" />
                     </div>
                 </div>
                 <div>

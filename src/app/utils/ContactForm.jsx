@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { toast } from 'react-toastify' // For notifications
 import emailjs from '@emailjs/browser'
 
+import { LuSend } from 'react-icons/lu'
+
 function ContactForm() {
     const [userInput, setUserInput] = useState({
         name: '',
@@ -58,10 +60,6 @@ function ContactForm() {
                 <div className="mb-6">
                     <div className="mx-0 mb-1 sm:mb-4">
                         <div className="mx-0 mb-1 sm:mb-4">
-                            <label
-                                htmlFor="name"
-                                className="pb-1 text-xs uppercase tracking-wider"
-                            ></label>
                             <input
                                 type="text"
                                 name="name"
@@ -74,10 +72,6 @@ function ContactForm() {
                             />
                         </div>
                         <div className="mx-0 mb-1 sm:mb-4">
-                            <label
-                                htmlFor="email"
-                                className="pb-1 text-xs uppercase tracking-wider"
-                            ></label>
                             <input
                                 type="email"
                                 name="email"
@@ -91,10 +85,6 @@ function ContactForm() {
                         </div>
                     </div>
                     <div className="mx-0 mb-1 sm:mb-4">
-                        <label
-                            htmlFor="textarea"
-                            className="pb-1 text-xs uppercase tracking-wider"
-                        ></label>
                         <textarea
                             name="message"
                             value={userInput.message}
@@ -111,8 +101,9 @@ function ContactForm() {
                 <div className="text-center">
                     <button
                         type="submit"
-                        className="w-full filled_button px-6 py-3 font-xl rounded-md sm:mb-0"
+                        className="flex flex-row font-bodyFont font-bold justify-center items-center gap-2 w-full filled_button px-6 py-3 font-xl rounded-md sm:mb-0"
                     >
+                        <LuSend className="text-xl" />
                         Send Message
                     </button>
                 </div>

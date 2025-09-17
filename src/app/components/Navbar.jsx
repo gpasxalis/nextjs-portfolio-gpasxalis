@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import { RiMenu4Line, RiCloseLine } from 'react-icons/ri'
 import { AnimatePresence, motion } from 'framer-motion'
-import { HiOutlineDeviceMobile } from 'react-icons/hi'
+import { CiMobile3 } from 'react-icons/ci'
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -98,7 +98,7 @@ export const Navbar = () => {
                     target="_blank"
                     className="font-headingFont uppercase hidden min-[825px]:flex text-[16px] font-semibold filled_button py-3 px-8 text-white rounded-full items-center gap-2 hover:opacity-90 transition-opacity"
                 >
-                    <HiOutlineDeviceMobile className="text-lg" /> My Card
+                    <CiMobile3 className="text-lg" /> My Card
                 </motion.a>
                 {/* Mobile Menu Button */}
                 <motion.button
@@ -177,8 +177,7 @@ export const Navbar = () => {
                                     target="_blank"
                                     className="font-headingFont uppercase flex text-[16px] font-semibold filled_button py-4 px-8 text-gp-blue-bg rounded-full items-center justify-center gap-2 mt-4 hover:opacity-90 transition-opacity"
                                 >
-                                    <HiOutlineDeviceMobile className="text-lg" />{' '}
-                                    My Card
+                                    <CiMobile3 className="text-lg" /> My Card
                                 </motion.a>
                             </div>
                         </div>

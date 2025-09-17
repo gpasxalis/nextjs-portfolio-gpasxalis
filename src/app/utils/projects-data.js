@@ -40,7 +40,7 @@ export const ProjectData = [
         title: 'Digital Business Cards',
         img: '/images/pgrammenos_card_mockup.jpeg',
         category: 'Web App',
-        tags: ['Web App', 'NextJS', 'UI-UX'],
+        tags: ['Web App', 'NextJS', 'TailwindCSS', 'UI-UX'],
         liveUrl: 'https://card.dalution.gr/pgrammenos',
     },
 

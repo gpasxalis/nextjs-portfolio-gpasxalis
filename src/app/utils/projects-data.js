@@ -10,6 +10,15 @@ export const ProjectData = [
 
     {
         id: '02',
+        title: 'PeachLabs',
+        img: '/images/peachlabs_mockup.jpeg',
+        category: 'Website',
+        tags: ['Website', 'Wordpress'],
+        liveUrl: 'https://peachlabs.io/',
+    },
+
+    {
+        id: '03',
         title: 'KarasakalidisLTD',
         img: '/images/karasak_mockup.jpg',
         category: 'Website',
@@ -18,7 +27,7 @@ export const ProjectData = [
     },
 
     {
-        id: '03',
+        id: '04',
         title: 'Dalution Project',
         img: '/images/dalution_mockup.jpeg',
         category: 'Website',
@@ -27,16 +36,16 @@ export const ProjectData = [
     },
 
     {
-        id: '04',
+        id: '05',
         title: 'Digital Business Cards',
         img: '/images/pgrammenos_card_mockup.jpeg',
         category: 'Web App',
         tags: ['Web App', 'NextJS', 'UI-UX'],
-        liveUrl: 'https://card.dalution.gr',
+        liveUrl: 'https://card.dalution.gr/pgrammenos',
     },
 
     {
-        id: '05',
+        id: '06',
         title: 'Epapanikolaou',
         img: '/images/epap_mockup.jpg',
         category: 'Website',

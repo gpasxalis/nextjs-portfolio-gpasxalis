@@ -146,7 +146,7 @@ export const Navbar = () => {
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
                         className={`min-[825px]:hidden fixed w-full top-[64px] z-40 ${
-                            isScrolled ? 'bg-black/50 backdrop-blur-2xl' : ''
+                            isScrolled ? 'bg-black/30 backdrop-blur-lg ' : ''
                         }`}
                     >
                         <div className="bg-gp-blue-bg/80 backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">

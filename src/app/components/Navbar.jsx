@@ -149,7 +149,7 @@ export const Navbar = () => {
                             isScrolled ? 'bg-black/30 backdrop-blur-2xl' : ''
                         }`}
                     >
-                        <div className="bg-gp-blue-bg/80 backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
+                        <div className="bg-black/80 backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
                             <div className="flex flex-col gap-4">
                                 {navLinks.map((link, index) => (
                                     <motion.a

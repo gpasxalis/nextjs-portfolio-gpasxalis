@@ -96,7 +96,12 @@ function ContactForm() {
                             className="pb-1 text-xs uppercase tracking-wider"
                         ></label>
                         <textarea
-                            onChange={handleChange}
+                            onChange={(e) =>
+                                setUserInput({
+                                    ...input,
+                                    message: e.target.value,
+                                })
+                            }
                             required
                             id="textarea"
                             name="textarea"

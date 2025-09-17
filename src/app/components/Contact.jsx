@@ -3,8 +3,6 @@ import Tag from '../utils/Tag'
 import ContactForm from '../utils/ContactForm'
 import ContactCard from '../utils/ContactCard'
 
-import { HiMiniEnvelope } from 'react-icons/hi2'
-
 export default function Services() {
     return (
         <section className="pb-20 px-6 flex justify-around items-center flex-col gap-2">

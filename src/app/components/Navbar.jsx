@@ -147,7 +147,7 @@ export const Navbar = () => {
                         transition={{ duration: 0.3 }}
                         className="min-[825px]:hidden fixed w-full top-[80px] z-40"
                     >
-                        <div className="bg-black backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
+                        <div className="bg-gp-blue-bg/80 backdrop-blur-2xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
                             <div className="flex flex-col gap-4">
                                 {navLinks.map((link, index) => (
                                     <motion.a

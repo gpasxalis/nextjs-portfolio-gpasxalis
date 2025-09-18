@@ -82,7 +82,7 @@ export default function PortfolioItem(project) {
                     {project.tags.map((tagText, index) => (
                         <span
                             key={index}
-                            className="px-2 py-1 bg-white/10 text-gp-accent/80 text-[11px] rounded-md border border-white/15"
+                            className="font-bodyFont px-2 py-1 bg-white/10 text-gp-accent/80 text-[11px] rounded-md border border-white/15"
                         >
                             {tagText}
                         </span>

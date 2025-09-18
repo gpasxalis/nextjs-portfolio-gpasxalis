@@ -2,7 +2,7 @@
 import { motion, scale } from 'framer-motion'
 import Link from 'next/link'
 
-import { BsFillPersonFill } from 'react-icons/bs'
+import { GoPersonFill } from 'react-icons/go'
 import { HiMapPin, HiMiniEnvelope, HiPhone } from 'react-icons/hi2'
 
 export default function ContactCard() {
@@ -23,7 +23,7 @@ export default function ContactCard() {
             >
                 <div>
                     <div className="p-4 rounded-xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all">
-                        <BsFillPersonFill className="text-lg" />
+                        <GoPersonFill className="text-lg" />
                     </div>
                 </div>
                 <div>
@@ -32,7 +32,7 @@ export default function ContactCard() {
                     </p>
                     <p className="text-gp-accent/90 text-xl font-semibold font-headingFont">
                         Paschalis Grammenos
-                        <span className="text-gp-primary">.</span>
+                        <span className="text-gp-primary text-xl">.</span>
                     </p>
                 </div>
             </motion.div>
@@ -54,7 +54,7 @@ export default function ContactCard() {
                     </p>
                     <p className="text-gp-accent/90 text-xl font-semibold font-headingFont">
                         <Link href={`tel:+306978101030`}>+30 697 810 1030</Link>
-                        <span className="text-gp-primary">.</span>
+                        <span className="text-gp-primary text-xl">.</span>
                     </p>
                 </div>
             </motion.div>
@@ -78,7 +78,7 @@ export default function ContactCard() {
                         <Link href={`mailto:paschalisgrammenos@gmail.com`}>
                             paschalisgrammenos@gmail.com
                         </Link>
-                        <span className="text-gp-primary">.</span>
+                        <span className="text-gp-primary text-xl">.</span>
                     </p>
                 </div>
             </motion.div>
@@ -99,7 +99,8 @@ export default function ContactCard() {
                         Location
                     </p>
                     <p className="text-gp-accent/90 text-xl font-semibold font-headingFont">
-                        AXD, Greece<span className="text-gp-primary">.</span>
+                        AXD, Greece
+                        <span className="text-gp-primary text-xl">.</span>
                     </p>
                 </div>
             </motion.div>

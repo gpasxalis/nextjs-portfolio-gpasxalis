@@ -19,7 +19,8 @@ export default function Services() {
                 </div>
                 <div className="max-w-full w-full md:w-1/2 order-0 md:order-1">
                     <h3 className="text-2xl md:text-3xl lg:text-4xl font-headingFont font-bold text-gp-accent py-5 md:py-10">
-                        Contact Me<span className="text-gp-primary">.</span>
+                        Contact Me
+                        <span className="text-gp-primary">.</span>
                     </h3>
                     <ContactForm />
                 </div>

@@ -5,17 +5,25 @@ import { RiMenu4Line, RiCloseLine } from 'react-icons/ri'
 import { AnimatePresence, motion } from 'framer-motion'
 import { CiMobile3 } from 'react-icons/ci'
 
+import {
+    HiHome,
+    HiUser,
+    HiCog6Tooth,
+    HiBriefcase,
+    HiEnvelope,
+} from 'react-icons/hi2'
+
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [isScrolled, setIsScrolled] = useState(false)
 
     // Nav Links Array
     const navLinks = [
-        { name: 'Home', href: '/' },
-        { name: 'About', href: '#about' },
-        { name: 'Services', href: '#services' },
-        { name: 'Portfolio', href: '#portfolio' },
-        { name: 'Contact', href: '#contact' },
+        { name: 'Home', href: '/', icon: HiHome },
+        { name: 'About', href: '#about', icon: HiUser },
+        { name: 'Services', href: '#services', icon: HiCog6Tooth },
+        { name: 'Portfolio', href: '#portfolio', icon: HiBriefcase },
+        { name: 'Contact', href: '#contact', icon: HiEnvelope },
     ]
 
     //   Header background change on scroll
@@ -149,22 +157,27 @@ export const Navbar = () => {
                     >
                         <div className="bg-gp-blue-bg backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
                             <div className="flex flex-col gap-4">
-                                {navLinks.map((link, index) => (
-                                    <motion.a
-                                        initial={{ opacity: 0, x: -20 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        transition={{
-                                            duration: 0.3,
-                                            delay: index * 0.1,
-                                        }}
-                                        onClick={closeMenu}
-                                        key={link.href || index}
-                                        href={link.href}
-                                        className="font-headingFont uppercase text-gp-accent text-[18px] font-bold hover:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
-                                    >
-                                        {link.name}
-                                    </motion.a>
-                                ))}
+                                {navLinks.map((link, index) => {
+                                    const IconComponent = link.icon
+
+                                    return (
+                                        <motion.a
+                                            initial={{ opacity: 0, x: -20 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{
+                                                duration: 0.3,
+                                                delay: index * 0.1,
+                                            }}
+                                            onClick={closeMenu}
+                                            key={link.href || index}
+                                            href={link.href}
+                                            className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
+                                        >
+                                            <IconComponent className="text-xl" />
+                                            {link.name}
+                                        </motion.a>
+                                    )
+                                })}
                                 {/* Mobile Let's talk button */}
                                 <motion.a
                                     initial={{ opacity: 0, x: 20 }}

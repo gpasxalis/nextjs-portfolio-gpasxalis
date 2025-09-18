@@ -39,6 +39,8 @@ export default function TransparentButton({ children, href_to }) {
                 className="
           transform transition-transform duration-300 
           group-hover:translate-x-1.5
+          group-active:translate-x-1.5
+          group-focus:translate-x-1.5
         "
             />
         </Link>

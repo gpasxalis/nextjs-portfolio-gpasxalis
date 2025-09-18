@@ -28,7 +28,7 @@ export default function Services() {
                     />
                 </div>
                 <div className="max-w-full w-full md:w-1/2 lg:pl-5 order-0 md:order-1">
-                    <Tag>what we do</Tag>
+                    <Tag>what i do</Tag>
                     <SectionTitles>Infinite Solutions</SectionTitles>
                 </div>
             </div>
@@ -92,7 +92,7 @@ export default function Services() {
                 <div className="w-full md:w-[30%]">
                     <IconCard
                         title="Optimized Page Speed"
-                        item_text="Fast websites keep users engaged. We optimize every detail to deliver quick loading times and smooth performance"
+                        item_text="Fast websites keep users engaged. I optimize every detail to deliver quick loading times and smooth performance"
                     >
                         <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
                             <MdSpeed />

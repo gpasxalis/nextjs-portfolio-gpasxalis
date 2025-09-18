@@ -171,9 +171,9 @@ export const Navbar = () => {
                                             onClick={closeMenu}
                                             key={link.href || index}
                                             href={link.href}
-                                            className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
+                                            className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary focus:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
                                         >
-                                            <IconComponent className="text-xl" />
+                                            <IconComponent className="text-xl text-gp-accent/60" />
                                             {link.name}
                                         </motion.a>
                                     )

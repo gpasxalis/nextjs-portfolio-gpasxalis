@@ -129,7 +129,7 @@ export const Navbar = () => {
                                 exit={{ rotate: 90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <RiCloseLine className="text-2xl text-gp-accent hover:text-gp-primary" />
+                                <RiCloseLine className="text-2xl text-gp-accent hover:text-gp-primary focus:text-gp-primary active:text-gp-primary" />
                             </motion.div>
                         ) : (
                             <motion.div
@@ -139,7 +139,7 @@ export const Navbar = () => {
                                 exit={{ rotate: -90, opacity: 0 }}
                                 transition={{ duration: 0.2 }}
                             >
-                                <RiMenu4Line className="text-2xl text-gp-accent hover:text-gp-primary" />
+                                <RiMenu4Line className="text-2xl text-gp-accent hover:text-gp-primary focus:text-gp-primary active:text-gp-primary" />
                             </motion.div>
                         )}
                     </AnimatePresence>

@@ -173,7 +173,7 @@ export const Navbar = () => {
                                             href={link.href}
                                             className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary focus:text-gp-primary active:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
                                         >
-                                            <IconComponent className="text-xl text-current" />
+                                            <IconComponent className="text-xl text-current/60" />
                                             {link.name}
                                         </motion.a>
                                     )

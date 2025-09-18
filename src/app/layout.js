@@ -1,6 +1,7 @@
 import { Open_Sans, Oswald } from 'next/font/google'
 import './globals.css'
 import { Navbar } from './components/Navbar'
+import { ToastContainer } from 'react-toastify'
 
 const bodyFont = Open_Sans({
     variable: '--font-body-font',
@@ -43,6 +44,11 @@ export default function RootLayout({ children }) {
                 <main className="lg:max-w-[1450px] mx-auto max-w-screen">
                     {children}
                 </main>
+                <ToastContainer
+                    position="bottom-right"
+                    theme="colored"
+                    closeOnClick={true}
+                />
             </body>
         </html>
     )

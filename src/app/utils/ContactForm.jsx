@@ -63,7 +63,7 @@ function ContactForm() {
                     <div className="mx-0 mb-1 sm:mb-4">
                         <div className="mx-0 mb-1 sm:mb-4">
                             <div className="flex justify-center items-center gap-2 mb-2 w-full rounded-md border border-gp-accent/30 py-2 pl-2 pr-4 shadow-md text-gray-300 sm:mb-0">
-                                <GoPersonFill className="text-xl text-gp-accent" />
+                                <GoPersonFill className="text-lg text-gp-accent" />
                                 <input
                                     type="text"
                                     name="name"
@@ -78,7 +78,7 @@ function ContactForm() {
                         </div>
                         <div className="mx-0 mb-1 sm:mb-4">
                             <div className="flex justify-center items-center gap-2 mb-2 w-full rounded-md border border-gp-accent/30 py-2 pl-2 pr-4 shadow-md text-gray-300 sm:mb-0">
-                                <FaEnvelope className="text-xl text-gp-accent" />
+                                <FaEnvelope className="text-lg text-gp-accent" />
                                 <input
                                     type="email"
                                     name="email"

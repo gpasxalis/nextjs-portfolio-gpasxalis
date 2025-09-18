@@ -82,7 +82,7 @@ export default function PortfolioItem(project) {
                     {project.tags.map((tagText, index) => (
                         <span
                             key={index}
-                            className="font-bodyFont px-2 py-1 bg-white/10 text-gp-accent/80 text-[11px] rounded-md border border-white/15"
+                            className="font-bodyFont px-2 py-1 bg-white/10 text-gp-accent/80 text-[11px] rounded-full border border-white/15"
                         >
                             {tagText}
                         </span>
@@ -95,7 +95,7 @@ export default function PortfolioItem(project) {
                     href={project.url}
                     target="_blank"
                     variants={item}
-                    className="flex items-center gap-1 rounded-md font-bodyFont font-semibold w-fit text-[11px] px-2 py-1 bg-gp-accent hover:bg-gp-accent/90 focus:bg-gp-accent/90 active:bg-gp-accent/90 text-gp-blue-bg"
+                    className="flex items-center mt-3 gap-1 rounded-full font-bodyFont font-semibold w-fit text-[11px] px-2 py-1 bg-gp-accent hover:bg-gp-accent/85 focus:bg-gp-accent/85 active:bg-gp-accent/85 text-gp-blue-bg"
                 >
                     <IoGlobeOutline />
                     Website

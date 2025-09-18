@@ -4,6 +4,8 @@ import Tag from '../utils/Tag'
 import InfoBoxes from '../utils/InfoBoxes'
 import InfoCard from '../utils/InfoCard'
 import TechStack from './TechStack'
+import ButtonSmall from '../utils/ButtonSmall'
+import TransparentButton from '../utils/TransparentButton'
 
 export default function About() {
     return (
@@ -55,12 +57,9 @@ export default function About() {
                         boundaries of what I can achieve
                     </p>
 
-                    <Button
-                        classes="filled_button text-gp-blue-bg"
-                        href_to="#services"
-                    >
-                        Contact Me
-                    </Button>
+                    <TransparentButton href_to="techstack">
+                        My Tech Stack
+                    </TransparentButton>
                 </div>
 
                 <div className="w-full md:w-1/3 flex justify-around items-start md:items-center flex-col">
@@ -68,7 +67,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col">
+            <div id="techstack" className="w-full flex flex-col">
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-headingFont font-bold text-gp-accent py-5 md:py-10">
                     My Tech Stack<span className="text-gp-primary">.</span>
                 </h3>

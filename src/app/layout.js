@@ -27,7 +27,7 @@ export const viewport = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className="scroll-smooth">
             <body
                 className={`${headingFont.variable} ${bodyFont.variable} antialiased bg-gp-blue-bg`}
             >

@@ -39,7 +39,7 @@ export default function Services() {
                         title="Web Development"
                         item_text="I design and build modern websites tailored to your needs, focusing on clean code, great user experience, and long-lasting performance"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdOutlineComputer />
                         </div>
                     </IconCard>
@@ -50,7 +50,7 @@ export default function Services() {
                         title="UI/UX Design"
                         item_text="Crafting designs that are not only visually appealing but also easy to navigate, ensuring users enjoy every interaction"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdDesignServices />
                         </div>
                     </IconCard>
@@ -61,7 +61,7 @@ export default function Services() {
                         title="Mobile First Design"
                         item_text="I design with mobile users in mind first, ensuring a smooth, intuitive experience that scales perfectly to larger screens"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdPhoneIphone />
                         </div>
                     </IconCard>
@@ -72,7 +72,7 @@ export default function Services() {
                         title="Fully Responsive"
                         item_text="Your website will look and work perfectly on any device, ensuring a seamless experience for users on desktops, tablets, and mobile phones"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdDevices />
                         </div>
                     </IconCard>
@@ -83,7 +83,7 @@ export default function Services() {
                         title="SEO Optimized"
                         item_text="I implement SEO best practices to help your website rank higher, attract more visitors, and grow your online presence"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdTrendingUp />
                         </div>
                     </IconCard>
@@ -94,7 +94,7 @@ export default function Services() {
                         title="Optimized Page Speed"
                         item_text="Fast websites keep users engaged. I optimize every detail to deliver quick loading times and smooth performance"
                     >
-                        <div className="bg-gp-accent w-fit p-4 rounded-2xl text-4xl text-gp-blue-bg">
+                        <div className="bg-gp-accent w-fit p-4 rounded-3xl text-4xl text-gp-blue-bg">
                             <MdSpeed />
                         </div>
                     </IconCard>
@@ -104,7 +104,7 @@ export default function Services() {
             <div className="w-full flex justify-center items-center">
                 <Button
                     classes="filled_button text-gp-blue-bg"
-                    href_to="#services"
+                    href_to="#contact"
                 >
                     Contact Me
                 </Button>

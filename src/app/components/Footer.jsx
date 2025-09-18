@@ -1,26 +1,11 @@
 'use client'
 import React from 'react'
-import { FaLinkedin } from 'react-icons/fa'
-import { CiMobile3 } from 'react-icons/ci'
-import { FaGithub } from 'react-icons/fa'
-import { motion } from 'framer-motion'
-
+import SocialIcons from '../utils/SocialIcons'
 import Link from 'next/link'
 
-export default function Footer() {
-    // Social Media Links Array
-    const socialIcons = [
-        { icon: FaLinkedin, href: 'https://linkedin.com/' },
-        {
-            icon: CiMobile3,
-            href: 'https://card.dalution.gr/pgrammenos',
-        },
-        {
-            icon: FaGithub,
-            href: 'https://github.com/gpasxalis',
-        },
-    ]
+import { motion } from 'framer-motion'
 
+export default function Footer() {
     const container = {
         hidden: {},
         show: { transition: { staggerChildren: 0.2 } },
@@ -32,28 +17,7 @@ export default function Footer() {
     }
     return (
         <footer className="py-12 px-4 text-center">
-            <motion.div
-                variants={container}
-                initial="hidden"
-                whileInView="show"
-                className="flex justify-center gap-2 md:gap-6 mb-8"
-            >
-                {socialIcons.map((social, index) => {
-                    const IconComponent = social.icon
-                    return (
-                        <motion.a
-                            variants={item}
-                            whileHover={{ scale: 1.02, rotate: 5 }}
-                            whileTap={{ scale: 0.9 }}
-                            href={social.href}
-                            key={index}
-                            className="p-4 rounded-2xl border border-outer text-gp-accent hover:bg-gp-accent/5 transition-all"
-                        >
-                            <IconComponent className="text-xl md:text-2xl text-primary" />
-                        </motion.a>
-                    )
-                })}
-            </motion.div>
+            <SocialIcons classes="flex justify-center gap-2 md:gap-6 mb-8" />
             <motion.p
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}

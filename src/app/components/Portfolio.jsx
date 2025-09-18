@@ -26,6 +26,7 @@ export default function Portfolio() {
                         title={project.title}
                         img={project.img}
                         category={project.category}
+                        paragraph={project.paragraph}
                         tags={project.tags}
                         url={project.liveUrl}
                     />

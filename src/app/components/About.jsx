@@ -38,7 +38,7 @@ export default function About() {
 
             <div className="w-full flex justify-around items-start flex-col md:flex-row gap-10">
                 <div className="w-full md:w-2/3 flex justify-around items-start flex-col gap-10">
-                    <p className="font-bodyFont text-gp-accent/80 text-sm md:text-lg">
+                    <p className="font-bodyFont text-gp-accent/80 text-sm md:text-md">
                         Curious and persistent by nature, I have been passionate
                         about programming and creating digital experiences
                         throughout my life. I enjoy solving problems step by

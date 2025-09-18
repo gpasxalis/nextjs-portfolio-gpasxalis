@@ -1,6 +1,7 @@
 'use client'
 import { motion, scale } from 'framer-motion'
 import { FiArrowUpRight } from 'react-icons/fi'
+import { IoGlobeOutline } from 'react-icons/io5'
 
 export default function PortfolioItem(project) {
     const container = {
@@ -39,7 +40,7 @@ export default function PortfolioItem(project) {
                 delay: 0.3,
             }}
             key={project.id}
-            className="bg-gp-accent/5 backdrop-blur-sm rounded-3xl overflow-hidden border border-gp-accent/10 w-full md:w-[30%]"
+            className="backdrop-blur-sm rounded-3xl overflow-hidden border border-gp-accent/10 w-full md:w-[30%]"
         >
             <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -53,22 +54,7 @@ export default function PortfolioItem(project) {
             </motion.div>
 
             {/* Projects Info */}
-            <div className="p-3 md:p-6 rounded-b-2xl bg-black/20 backdrop-blur-md font-bodyFont">
-                <motion.div
-                    variants={container}
-                    initial="hidden"
-                    animate="show"
-                    className="flex flex-wrap gap-2 mb-3"
-                >
-                    {project.tags.map((tagText, index) => (
-                        <span
-                            key={index}
-                            className="px-2 py-1 bg-white/10 text-gp-accent/80 text-xs rounded-lg border border-white/15"
-                        >
-                            {tagText}
-                        </span>
-                    ))}
-                </motion.div>
+            <div className="flex flex-col gap-4 p-3 md:p-6 rounded-b-2xl bg-black/20 backdrop-blur-md font-bodyFont">
                 <div className="flex items-center justify-between">
                     <h3 className="text-xl font-bold text-gp-accent transition-colors duration-300">
                         {project.title}
@@ -76,17 +62,44 @@ export default function PortfolioItem(project) {
                             .
                         </span>
                     </h3>
-                    {/* Button */}
-                    <motion.a
-                        href={project.url}
-                        target="_blank"
-                        variants={item}
-                        whileHover={{ scale: 1.1 }}
-                        className="flex items-center justify-center w-10 h-10 bg-gp-accent/10 backdrop-blur-sm border border-gp-accent/20 rounded-full text-gp-accent hover:bg-white/20 transition-colors duration-300"
-                    >
-                        <FiArrowUpRight className="text-lg" />
-                    </motion.a>
                 </div>
+
+                <motion.p
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                    className="text-pretty font-bodyFont text-sm text-gp-accent/80"
+                >
+                    {project.paragraph}
+                </motion.p>
+
+                <motion.div
+                    variants={container}
+                    initial="hidden"
+                    animate="show"
+                    className="flex flex-wrap gap-2"
+                >
+                    {project.tags.map((tagText, index) => (
+                        <span
+                            key={index}
+                            className="px-2 py-1 bg-white/10 text-gp-accent/80 text-[11px] rounded-md border border-white/15"
+                        >
+                            {tagText}
+                        </span>
+                    ))}
+                </motion.div>
+
+                {/* Projects Button */}
+
+                <motion.a
+                    href={project.url}
+                    target="_blank"
+                    variants={item}
+                    className="flex items-center gap-1 rounded-md font-bodyFont font-semibold w-fit text-[11px] px-2 py-1 bg-gp-accent hover:bg-gp-accent/90 focus:bg-gp-accent/90 active:bg-gp-accent/90 text-gp-blue-bg"
+                >
+                    <IoGlobeOutline />
+                    Website
+                </motion.a>
             </div>
         </motion.div>
     )

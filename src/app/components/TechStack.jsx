@@ -94,7 +94,7 @@ export default function TechStack() {
                         <div className="text-4xl text-gp-primary">
                             {tech.icon}
                         </div>
-                        <div className="font-headingFont font-medium text-lg text-gp-accent">
+                        <div className="font-headingFont font-medium text-md text-gp-accent/90">
                             {tech.name}
                         </div>
                     </motion.div>
@@ -124,7 +124,7 @@ export default function TechStack() {
                         <div className="text-4xl text-gp-primary">
                             {tech.icon}
                         </div>
-                        <div className="font-headingFont font-medium text-lg text-gp-accent">
+                        <div className="font-headingFont font-medium text-md text-gp-accent/90">
                             {tech.name}
                         </div>
                     </motion.div>

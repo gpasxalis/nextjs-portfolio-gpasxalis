@@ -7,7 +7,7 @@ export default function IconCard({ title, item_text, children }) {
                 {title}
             </h4>
 
-            <p className="text-gp-accent/80">{item_text}</p>
+            <p className="text-gp-accent/80 text-md">{item_text}</p>
         </div>
     )
 }

@@ -40,7 +40,7 @@ export default function PortfolioItem(project) {
                 delay: 0.3,
             }}
             key={project.id}
-            className="backdrop-blur-sm rounded-3xl overflow-hidden border border-gp-accent/10 w-full md:w-[30%]"
+            className="backdrop-blur-md rounded-3xl overflow-hidden border border-gp-accent/10 w-full md:w-[30%]"
         >
             <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -54,7 +54,7 @@ export default function PortfolioItem(project) {
             </motion.div>
 
             {/* Projects Info */}
-            <div className="flex flex-col gap-4 p-3 md:p-6 rounded-b-2xl bg-black/20 backdrop-blur-md font-bodyFont">
+            <div className="flex flex-col gap-4 p-5 md:p-6 rounded-b-2xl bg-black/20 backdrop-blur-md font-bodyFont">
                 <div className="flex items-center justify-between">
                     <h3 className="text-xl font-bold text-gp-accent transition-colors duration-300">
                         {project.title}

@@ -161,7 +161,7 @@ export const Navbar = () => {
                             transition={{ duration: 0.3 }}
                             className={`min-[825px]:hidden w-full top-[80px] z-40`}
                         >
-                            <div className="bg-gp-blue-bg backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-1 mb-3 mt-2 p-3">
+                            <div className="bg-gp-blue-bg backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mb-3 mt-4 p-6">
                                 <div className="flex flex-col gap-4">
                                     {navLinks.map((link, index) => {
                                         const IconComponent = link.icon

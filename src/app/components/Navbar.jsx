@@ -55,7 +55,7 @@ export const Navbar = () => {
                     : ''
             }`}
         >
-            <nav className="flex items-center justify-between max-w-6xl mx-auto w-[90%] py-4">
+            <nav className="flex items-center justify-between max-w-[1400px] mx-auto w-[90%] py-4">
                 {/* Logo */}
                 <motion.a
                     initial={{ opacity: 0, x: -20 }}
@@ -171,7 +171,7 @@ export const Navbar = () => {
                                             onClick={closeMenu}
                                             key={link.href || index}
                                             href={link.href}
-                                            className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary focus:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
+                                            className="flex gap-2 items-center font-headingFont uppercase text-gp-accent text-[16px] font-normal hover:text-gp-primary focus:text-gp-primary active:text-gp-primary py-3 border-b border-gp-accent/20 transition-all duration-300 ease-in-out"
                                         >
                                             <IconComponent className="text-xl text-gp-accent/60" />
                                             {link.name}

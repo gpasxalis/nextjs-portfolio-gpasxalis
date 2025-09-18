@@ -36,7 +36,7 @@ export default function TechStack() {
         { name: 'Flask', icon: <BiLogoFlask /> },
         { name: 'JavaScript', icon: <IoLogoJavascript /> },
         { name: 'NextJS', icon: <RiNextjsFill /> },
-        { name: 'React', icon: <IoLogoReact /> },
+        { name: 'ReactJS', icon: <IoLogoReact /> },
         { name: 'HTML5', icon: <IoLogoHtml5 /> },
         { name: 'CSS3', icon: <IoLogoCss3 /> },
         { name: 'jQuery', icon: <BiLogoJquery /> },

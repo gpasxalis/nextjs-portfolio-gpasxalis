@@ -56,7 +56,7 @@ export const Navbar = () => {
             <nav
                 className={`flex flex-col min-[825px]:flex-row justify-around w-[95%] py-4 transition-all duration-500 ease-out  ${
                     isScrolled
-                        ? 'max-w-[1300px] px-4 rounded-2xl bg-black/30 backdrop-blur-lg shadow-sm shadow-gp-accent/10'
+                        ? 'max-w-[1300px] px-4 rounded-4xl bg-black/30 backdrop-blur-lg shadow-sm shadow-gp-accent/10'
                         : 'max-w-[1400px]'
                 }`}
             >
@@ -161,7 +161,7 @@ export const Navbar = () => {
                             transition={{ duration: 0.3 }}
                             className={`min-[825px]:hidden w-full top-[80px] z-40`}
                         >
-                            <div className="bg-gp-blue-bg backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-6">
+                            <div className="bg-gp-blue-bg backdrop-blur-3xl shadow-gp-accent/20 shadow-lg border border-gp-accent/20 rounded-2xl mx-4 mt-2 p-5">
                                 <div className="flex flex-col gap-4">
                                     {navLinks.map((link, index) => {
                                         const IconComponent = link.icon
